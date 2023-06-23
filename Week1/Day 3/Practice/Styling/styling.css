@@ -1,0 +1,29 @@
+h1{
+    background-color: black;
+    color: white;
+    font-family:  cursive;
+    font-weight: bold;
+}
+h1>span{
+    color: aqua;
+}
+
+h2{
+    background-color: #663399;
+    color: white;
+    font-family: Arial;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+h3{
+    background-color: #9fc5f8;
+    text-decoration: underline;
+    font-weight: lighter;
+    text-align: right;
+}
+
+h1,h2,h3 {
+    padding: 4px 8px 4px 16px;
+}
