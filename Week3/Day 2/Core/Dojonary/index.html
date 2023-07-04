@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="container">
+      <!-- Navbar -->
+      <header>
+        <div id="title">
+          <h1>Dojonary</h1>
+        </div>
+        <div id="search">
+          <input type="text" name="search-bar" placeholder="Search" />
+        </div>
+        <div id="login">
+          <input type="button" class="btn login" value="Login" onclick="logging(this)" />
+        </div>
+      </header>
+
+      <!-- Content -->
+      <main>
+        <!-- Left Column -->
+        <div class="col col-4">
+          <div class="row">
+            <div class="col col-1">
+              <h2>ninja</h2>
+              <h3>noun</h3>
+              <h4>Plural: <span>ninjas</span></h4>
+              <input type="button" value="13 likes" class="btn like" onclick="liked()" />
+            </div>
+            <div class="col col-2">
+              <p>
+                A practitioner skilled in the <a href="#">Japanese</a> art of
+                <a href="#">ninjutsu</a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <h2>ninja</h2>
+              <h3>noun</h3>
+              <h4>Plural: ninjas</h4>
+              <input type="button" value="37 likes" class="btn like" onclick="liked()" />
+            </div>
+            <div class="col col-2">
+              <p>
+                A <a href="#">programmer </a> who breaks down problems with
+                <a href="#">zen</a>-like focus
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col col-1">
+          <div class="row">
+            <p>Dojonary is defined by <span>YOU</span></p>
+            <input type="button" value="Add Definition" class="btn def" onclick="remove(this)" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
