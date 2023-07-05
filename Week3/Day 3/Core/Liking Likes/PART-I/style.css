@@ -1,0 +1,57 @@
+/* wildcard */
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.container,
+.row {
+  display: flex;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.post {
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  height: 12vh;
+  width: 25%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.info {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.user {
+  margin-left: 0;
+  margin-right: 96px;
+  font-size: larger;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.btn-like {
+  margin: 0;
+  width: 48px;
+}
+.btn {
+  width: 100%;
+  border: 2px black solid;
+  margin: 5% auto;
+  height: 28px;
+  box-shadow: black 3px 3px;
+  cursor: pointer;
+  background-color: #ffd966;
+  color: black;
+  font-weight: bolder;
+}
