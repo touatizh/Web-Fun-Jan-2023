@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Likes</title>
+  </head>
+  <body>
+    <!-- Global webpage container -->
+    <div class="container">
+      <!-- Top -->
+      <header>
+        <h1>Network</h1>
+      </header>
+
+      <!-- Main Content -->
+      <header id="pg-title">
+        <h1>Your Feed</h1>
+      </header>
+      <main>
+        <!-- User Account -->
+        <aside>
+          <img src="assets/user-circle.png" alt="pfp" width="90" />
+          <a href="#">Add an Avatar</a>
+          <h3>James Doe</h3>
+        </aside>
+        <!-- Feed -->
+        <section>
+          <div class="row post">
+            <div class="row info">
+              <div class="user">
+                <p>Neil M</p>
+              </div>
+              <div class="likes">
+                <p><span>9</span> like(s)</p>
+              </div>
+              <div class="btn-like">
+                <button class="btn" onclick="increaseLikes(this)">Like</button>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                I just set up this new discord bot, let me know what you all
+                think. <a href="#">link</a>
+              </p>
+            </div>
+          </div>
+          <div class="row post">
+            <div class="row info">
+              <div class="user">
+                <p>Nichole K</p>
+              </div>
+              <div class="likes">
+                <p><span>12</span> like(s)</p>
+              </div>
+              <div class="btn-like">
+                <button class="btn" onclick="increaseLikes(this)">Like</button>
+              </div>
+            </div>
+            <div class="content">
+              <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+            </div>
+          </div>
+          <div class="row post">
+            <div class="row info">
+              <div class="user">
+                <p>Jim R</p>
+              </div>
+              <div class="likes">
+                <p><span>9</span> like(s)</p>
+              </div>
+              <div class="btn-like">
+                <button class="btn" onclick="increaseLikes(this)">Like</button>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                I can't stop listening to the <a href="#">new album</a>. Who
+                else is liking it?
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
