@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Weather Forecast</title>
+    </head>
+    <body>
+        <!-- header and nav -->
+        <header>
+            <div class="container">
+                <h1>DojoWeather</h1>
+                <nav>
+                    <a href="#" onclick="loading()">Burbank</a>
+                    <a href="#" onclick="loading()">Chicago</a>
+                    <a href="#" onclick="loading()">Dallas</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="container">
+            <!-- city name and tempreture unit selection -->
+            <div id="city">
+                <h2>San Jose</h2>
+                <div id="unit">
+                    <p>
+                        Show temperature in
+                        <select onchange="convert_temp(this)" id="usel">
+                            <option value="C">°C</option>
+                            <option value="F">°F</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <!-- city forecast -->
+            <div id="forecast">
+                <div class="day">
+                    <div class="name">
+                        <h3>Today</h3>
+                    </div>
+                    <div class="wx-img">
+                        <img src="assets/some_rain.png" alt="some rain">
+                    </div>
+                    <div class="wx">
+                        <span>some rain</span>
+                    </div>
+                    <div class="temps">
+                        <span class="red">24°</span>
+                        <span class="blue">18°</span>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="name">
+                        <h3>Tomorrow</h3>
+                    </div>
+                    <div class="wx-img">
+                        <img src="assets/some_sun.png" alt="some sun">
+                    </div>
+                    <div class="wx">
+                        <span>some sun</span>
+                    </div>
+                    <div class="temps">
+                        <span class="red">27°</span>
+                        <span class="blue">19°</span>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="name">
+                        <h3>Friday</h3>
+                    </div>
+                    <div class="wx-img">
+                        <img src="assets/some_clouds.png" alt="some clouds">
+                    </div>
+                    <div class="wx">
+                        <span>some clouds</span>
+                    </div>
+                    <div class="temps">
+                        <span class="red">21°</span>
+                        <span class="blue">16°</span>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="name">
+                        <h3>Saturday</h3>
+                    </div>
+                    <div class="wx-img">
+                        <img src="assets/some_sun.png" alt="some sun">
+                    </div>
+                    <div class="wx">
+                        <span>some sun</span>
+                    </div>
+                    <div class="temps">
+                        <span class="red">26°</span>
+                        <span class="blue">21°</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- cookies disclaimer -->
+        <footer class="container">
+            <div class="cookies">
+                <img src="assets/cookie.png" alt="cookies icon">
+            </div>
+            <div class="disc">
+                <h4>Stop! Cookie time</h4>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to
+                    analyze our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <div class="btn-cookies">
+                <button onclick="accepted(this)">I Accept</button>
+            </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="script.js"></script>
+    </body>
+</html>
